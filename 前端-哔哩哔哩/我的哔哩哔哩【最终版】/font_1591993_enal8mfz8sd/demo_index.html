@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>IconFont Demo</title>
+  <link rel="shortcut icon" href="https://gtms04.alicdn.com/tps/i4/TB1_oz6GVXXXXaFXpXXJDFnIXXX-64-64.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://g.alicdn.com/thx/cube/1.3.2/cube.min.css">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="iconfont.css">
+  <script src="iconfont.js"></script>
+  <!-- jQuery -->
+  <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/7bfddb60-08e8-11e9-9b04-53e73bb6408b.js"></script>
+  <!-- 代码高亮 -->
+  <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/a3f714d0-08e6-11e9-8a15-ebf944d7534c.js"></script>
+</head>
+<body>
+  <div class="main">
+    <h1 class="logo"><a href="https://www.iconfont.cn/" title="iconfont 首页" target="_blank">&#xe86b;</a></h1>
+    <div class="nav-tabs">
+      <ul id="tabs" class="dib-box">
+        <li class="dib active"><span>Unicode</span></li>
+        <li class="dib"><span>Font class</span></li>
+        <li class="dib"><span>Symbol</span></li>
+      </ul>
+      
+      <a href="https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=1591993" target="_blank" class="nav-more">查看项目</a>
+      
+    </div>
+    <div class="tab-container">
+      <div class="content unicode" style="display: block;">
+          <ul class="icon_lists dib-box">
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe60e;</span>
+                <div class="name">游戏</div>
+                <div class="code-name">&amp;#xe60e;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe656;</span>
+                <div class="name">bilibili</div>
+                <div class="code-name">&amp;#xe656;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe635;</span>
+                <div class="name">用户</div>
+                <div class="code-name">&amp;#xe635;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe6d6;</span>
+                <div class="name">搜索</div>
+                <div class="code-name">&amp;#xe6d6;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe652;</span>
+                <div class="name">会员购激活@2x</div>
+                <div class="code-name">&amp;#xe652;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe609;</span>
+                <div class="name">信息 短信 消息 提醒 邮件 私信 邮箱</div>
+                <div class="code-name">&amp;#xe609;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe613;</span>
+                <div class="name">首页</div>
+                <div class="code-name">&amp;#xe613;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe60f;</span>
+                <div class="name">购物车</div>
+                <div class="code-name">&amp;#xe60f;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe61a;</span>
+                <div class="name">选项</div>
+                <div class="code-name">&amp;#xe61a;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe600;</span>
+                <div class="name">频道激活@2x</div>
+                <div class="code-name">&amp;#xe600;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe827;</span>
+                <div class="name">风车</div>
+                <div class="code-name">&amp;#xe827;</div>
+              </li>
+          
+          </ul>
+          <div class="article markdown">
+          <h2 id="unicode-">Unicode 引用</h2>
+          <hr>
+
+          <p>Unicode 是字体在网页端最原始的应用方式，特点是：</p>
+          <ul>
+            <li>兼容性最好，支持 IE6+，及所有现代浏览器。</li>
+            <li>支持按字体的方式去动态调整图标大小，颜色等等。</li>
+            <li>但是因为是字体，所以不支持多色。只能使用平台里单色的图标，就算项目里有多色图标也会自动去色。</li>
+          </ul>
+          <blockquote>
+            <p>注意：新版 iconfont 支持多色图标，这些多色图标在 Unicode 模式下将不能使用，如果有需求建议使用symbol 的引用方式</p>
+          </blockquote>
+          <p>Unicode 使用步骤如下：</p>
+          <h3 id="-font-face">第一步：拷贝项目下面生成的 <code>@font-face</code></h3>
+<pre><code class="language-css"
+>@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+      url('iconfont.woff2') format('woff2'),
+      url('iconfont.woff') format('woff'),
+      url('iconfont.ttf') format('truetype'),
+      url('iconfont.svg#iconfont') format('svg');
+}
+</code></pre>
+          <h3 id="-iconfont-">第二步：定义使用 iconfont 的样式</h3>
+<pre><code class="language-css"
+>.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</code></pre>
+          <h3 id="-">第三步：挑选相应图标并获取字体编码，应用于页面</h3>
+<pre>
+<code class="language-html"
+>&lt;span class="iconfont"&gt;&amp;#x33;&lt;/span&gt;
+</code></pre>
+          <blockquote>
+            <p>"iconfont" 是你项目下的 font-family。可以通过编辑项目查看，默认是 "iconfont"。</p>
+          </blockquote>
+          </div>
+      </div>
+      <div class="content font-class">
+        <ul class="icon_lists dib-box">
+          
+          <li class="dib">
+            <span class="icon iconfont icon-youxi"></span>
+            <div class="name">
+              游戏
+            </div>
+            <div class="code-name">.icon-youxi
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-bilibili-"></span>
+            <div class="name">
+              bilibili
+            </div>
+            <div class="code-name">.icon-bilibili-
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-yonghu"></span>
+            <div class="name">
+              用户
+            </div>
+            <div class="code-name">.icon-yonghu
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-sousuo"></span>
+            <div class="name">
+              搜索
+            </div>
+            <div class="code-name">.icon-sousuo
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-huiyuangoujihuox"></span>
+            <div class="name">
+              会员购激活@2x
+            </div>
+            <div class="code-name">.icon-huiyuangoujihuox
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-xinxiduanxinxiaoxitixingyoujiansixinyouxiang"></span>
+            <div class="name">
+              信息 短信 消息 提醒 邮件 私信 邮箱
+            </div>
+            <div class="code-name">.icon-xinxiduanxinxiaoxitixingyoujiansixinyouxiang
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-shouye"></span>
+            <div class="name">
+              首页
+            </div>
+            <div class="code-name">.icon-shouye
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-icon-test"></span>
+            <div class="name">
+              购物车
+            </div>
+            <div class="code-name">.icon-icon-test
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-xuanxiang"></span>
+            <div class="name">
+              选项
+            </div>
+            <div class="code-name">.icon-xuanxiang
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-pindaojihuox"></span>
+            <div class="name">
+              频道激活@2x
+            </div>
+            <div class="code-name">.icon-pindaojihuox
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-fengche"></span>
+            <div class="name">
+              风车
+            </div>
+            <div class="code-name">.icon-fengche
+            </div>
+          </li>
+          
+        </ul>
+        <div class="article markdown">
+        <h2 id="font-class-">font-class 引用</h2>
+        <hr>
+
+        <p>font-class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书写不直观，语意不明确的问题。</p>
+        <p>与 Unicode 使用方式相比，具有如下特点：</p>
+        <ul>
+          <li>兼容性良好，支持 IE8+，及所有现代浏览器。</li>
+          <li>相比于 Unicode 语意明确，书写更直观。可以很容易分辨这个 icon 是什么。</li>
+          <li>因为使用 class 来定义图标，所以当要替换图标时，只需要修改 class 里面的 Unicode 引用。</li>
+          <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的 fontclass 代码：</h3>
+<pre><code class="language-html">&lt;link rel="stylesheet" href="./iconfont.css"&gt;
+</code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+<pre><code class="language-html">&lt;span class="iconfont icon-xxx"&gt;&lt;/span&gt;
+</code></pre>
+        <blockquote>
+          <p>"
+            iconfont" 是你项目下的 font-family。可以通过编辑项目查看，默认是 "iconfont"。</p>
+        </blockquote>
+      </div>
+      </div>
+      <div class="content symbol">
+          <ul class="icon_lists dib-box">
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-youxi"></use>
+                </svg>
+                <div class="name">游戏</div>
+                <div class="code-name">#icon-youxi</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-bilibili-"></use>
+                </svg>
+                <div class="name">bilibili</div>
+                <div class="code-name">#icon-bilibili-</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-yonghu"></use>
+                </svg>
+                <div class="name">用户</div>
+                <div class="code-name">#icon-yonghu</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-sousuo"></use>
+                </svg>
+                <div class="name">搜索</div>
+                <div class="code-name">#icon-sousuo</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-huiyuangoujihuox"></use>
+                </svg>
+                <div class="name">会员购激活@2x</div>
+                <div class="code-name">#icon-huiyuangoujihuox</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-xinxiduanxinxiaoxitixingyoujiansixinyouxiang"></use>
+                </svg>
+                <div class="name">信息 短信 消息 提醒 邮件 私信 邮箱</div>
+                <div class="code-name">#icon-xinxiduanxinxiaoxitixingyoujiansixinyouxiang</div>
+            </li>
+8 !       `   @    0  =hi class="dkb">
+   0  `  $`(    <svc slasa="icon0svF-icon2 Aria-h�ddel5#true"/
+ $   " ` $$     !`<use y|ink:href="#ion-sH�uq�"></use>
+#""          (  <)s6g6
+             ! <ei~ cl!ss="name">릖ɡ�,�dhv?
+  (   ��  @� 0""<`�v klasS-�code-na�E"<#hckn-shou{T/eiv>
+      `! 1  <'li>
+     ( 2 
+! %    0    <li`c|css="`ib&>
+             `  <s6g"bdas3=icN 3tg%igon" a2ia-hiddej="dz}e">
+        0 "   $   >uwd xlinK8Ref="#m�onicon-uds|">�/uwe>
+  �!$ p � `  8  |oq6g� (   " "0   $   >di�0Class="namE">���物贆<'div>
+      (   0    !8ehv cless=bcode-na}e">#ycon-Icon-t�3t</div~
+$       (   <-li?
+  " !� 0!J  ,!   �   "<Li$class="eib">
+    `     �     ,s�f`clasr9"ycon svg-icon" aria=h)lden?"tpue">  00        �0! ("<usa�xLink:(vef�"'icon�huan|ia^':>/uwe>
+`         �     </sfg>�            !`  =d�~ klqqs=2na�e&>���项</daf<
+"  (      0 " 8 <|iv c�a3s="�m$e,oaoe*c`con�pt�nziane</t�r>
+ $" " 0 b! �</Ni>
+   "     0�$  �   0&  (�$i clacS="dib".  "((  `       <swg(s|ass-icon sng-kso�" a�i`(�imlen|cprud�>
+$ $      ! $��  `!<use(<hkNK:(refu"'mcon-Pio�aMja�Unyb><guye> "  (   0 �" �h&<+svf>
+           ($ "!<fhv cl�Ss=#l!me*>频���濁洹@2y<-dyrz�  $ (! 0    c2 ,dmv�cmasq=#code-Lame"Bkcon-pmnda/j)`fox</eiv>J  0   `     </�i>
+      0`"   0( �!"   |,i$"lass="dkb">
+  !2  8 �(  "   <�v'(�L!ss=�ic/j"cvo-ico�# uvia-h)ddeo}2Tr}m":
+  $   `     `i  " u{e xhink8hr�f="#icon�gencche"~<+uqe.  0     $  �0   </rw�>
+ 0       �     1<dH��chars�2namd">髆h��</fiv>
+ ($` �'         \dxv$c`aSs"`ode-namo>#hC�n=cufg#he,'div? "  *  `    </li    b($   
+   0   ) ,�ul>
+    �     <dyv clds�=ba2tIkle merk�own">
+       00 > 0 �$/"��lC��-�>Cymbl ����܌<.H2~
+   �(  $ 2<hr>
+ $ 0  $")0<�:诛术䰐�7���疰g��使����嬏，徔该说黙���未睵的主Ƶ�．湝�����台皮e��抨荐�ހ用��b��瞸�ų䯋繍e���%Ꮒ考蟙篇<0h��g"">文��</a>
+$( !        这祍畨����%�從景做���l8�ĸ�$�VF ���a��乏���外两Ƕ��:�比关Ɯ��&����獡�9���4/p>* �     !��<�l:
+    2""�`   <li<支持礚���图� �d��뼜ĸ�再块���色i��制#��<-li>(!(  (  ! $  <li>먺过一些戀忧�<�Ɣ�������,�体`��样，逞轇�<code>gont=sizE$/co�e><0<codm>ckhkr</co�e> 来谁���桧徏Ä�</|i>   00    $! =l	>煼媹性h>�差支f�� 	E=+，及现代浇駈器g��>/l�>
+  �         <li�浏ȧ�g�����柛$SR ǚ�䀧胿丁h����꿘不如 TF'㈀</l�?
+  �(�p    ,/un=
+ �" "   h <0>�����F��麦如İ����=/p>�    1 �  <hS h�7"-{9�fklm">第츁毥：引啡项团伋靲��爐�� sy}b�$仃䠁���<)h#>
+<pve.=sde class="Lan/qag%-L�ml2>&lu9scR)pd �r`='./!coNf�nt.nc&gt;�lt;/qbrapt�g4;8maOde></xre:  ( `00"0 <h3 k�=3-csc-*6���侌歅�加奥�甘0�SS �'����������� L���а��﬉ϴ�=+�3>
+<psu>>code cLass="langwaue-ht�l"<&lt;wtyle&gt
+.icon0{
+ widthz �-m;*" jGigHt�$9em;�  ver4icel-al�gl: -0/3uao�1"fi,l> c5sbenvColkr;*  ower&lku> h}ddej;�]
+&l�;?�u�le&st;�<.cOFe><�prq.!` 0 (   "<h3 id<"-#>㬌�8�湤：ƍ������府图梇并��取瑻名，且用于页面：�'h3>J<xRe>8cmde class}*hang}awe'html`lt;S6G$c,i3S=#iconb ariA-hildun="true"�gt;J &mt9use 8link:�ref,'�coo-|ph&&g|�&lt;/ece&'v;
+&lt;/svg&GP;
+</ckde>�/ppE.
+    0 $�  </div<
+ $0   </d{t>
+
+   </dkv>
+ "</emt>
+  <qcsipt>*$ $(docd�ent).r�ad{(f5~"tkon ,) {
+`   �($8/.|abmcontaHnep n�o~4��t;vizw`�).sxow�)�J`"    &('#4afs l)'i�cliCk(fU.c|iOl (m) {N0 ` ( ""var(4abSoltent(= �('.|qb-cntqi^dr .cg�wenv�)
+$    �"$rcr`i�dax= $(txis).intux()J
+ $ $ ! 0if!($(txm�),*asK|Us[ 'actyV�g)i!
+  �0 �   !retupo
+  �4 0 0| emsm �
+0     $$9 $(##ta�s l�$(.remor%cnC�s(wactive&)
+�`   `    $(uhis)>ad,C�ess,'qsti6e#�"� $8(@  $  vabConpeN|.(idE0).mp(in$ax/&AdeIf)
+   !   0}  �` (}9
+ $ })
+$</script>
+</bodq>
+>/ht}l?"

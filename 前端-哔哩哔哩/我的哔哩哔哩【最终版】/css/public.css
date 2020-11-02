@@ -1,0 +1,80 @@
+body,html{
+	width: 100%;
+}
+body,html,h1,h2,h3,h4,h5,h6,p,input,ol,ul,a,div{
+	padding: 0;
+	margin: 0;
+	/* 改变盒子模型的默认设定 */
+	box-sizing: border-box;
+}
+ul,ol{
+	list-style: none;
+}
+input,button{
+	border: none;
+	outline: none;
+}
+a:hover,a{
+	color: #747474;
+	text-decoration: none;
+	/* 移动端点击后高亮 */
+	-webkit-tap-highlight-color: transparent;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+body,html,h1,h2,h3,h4,h5,h6,p,input,ol,ul,a,div{
+	padding: 0;
+	margin: 0;
+	/* 改变盒子模型的默认设定 */
+	box-sizing: border-box;
+}
+ul,ol{
+	list-style: none;
+}
+input,button{
+	border: none;
+	outline: none;
+}
+a:hover,a{
+	color: #747474;
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.bottomNav{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	background-color: #fff;
+}
+.bottomNav ul{
+	display: flex;
+}
+.bottomNav ul li{
+	flex: 1;
+}
+.bottomNav ul li a i{
+	font-size: 17px;
+}
+.bottomNav ul li a p{
+	font-size: 12px;
+	/* transform: translate(-90%,-90%); */
+}

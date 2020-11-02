@@ -1,0 +1,194 @@
+.Container{
+	width: 100%;
+	margin: 0;
+	background-color: #F4F4F4;
+}
+.topContainer{
+	display: flex;
+	width: 100%;
+	/* max-width: 640px; */
+	height: 68px;
+	position: absolute;
+	z-index: 998;
+	top: 0;
+	margin: 0;
+	background-color: #FA7298;
+}
+.leftTouxiang{
+	
+	/* display: block; */
+	flex: 1;
+	text-align: center;
+	margin-top: 35px;
+}
+.leftTouxiang img{
+	width: 32px;
+	height: 32px;
+	margin-top: -8px;
+	margin-right: 23px;
+	border-radius: 50%;
+}
+.leftTouxiang i{
+	color: #fff;
+	position: absolute;
+	margin-bottom: 30px;
+	margin-left: -30px;
+}
+.searchBox{
+	margin-top:18px ;
+	flex: 1;
+	position: relative;
+	margin-left: -27px;
+	margin-top: 30px;
+}
+.searchBox input{
+	border-radius: 13px;
+	height: 26px;
+	margin-bottom: -15px;
+	font-size: 10px;
+	background-color: #E5678C;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 7px;
+	text-indent: 19px;
+}
+.searchBox input::-webkit-input-placeholder{
+	color: #F8B0C4;
+}
+.searchBox i{
+	font-size: 12px;
+	position: absolute;
+	margin-left: 9px;
+	margin-top: 7px;
+	color: #F8B0C4;
+}
+.SmallPic{
+	flex: 1;
+	color: #FFF;
+	margin-top: 34px;
+	/* margin-left: 14px; */
+	padding-left: 23px;
+	margin-right: -18px;
+	display: flex;
+}
+.SmallPic .icon-youxi{
+	font-size: 21px;
+	flex: 1;
+	position: relative;
+	bottom: 3px;
+}
+.SmallPic .icon-xinxiduanxinxiaoxitixingyoujiansixinyouxiang{
+	font-size: 16px;
+	flex: 1;
+}
+.bilinav{
+	position: -webkit-sticky;
+    position: sticky;
+	top: 68px;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	background-color: #FFF;
+	border-bottom: 1px solid #E7E7E7;
+	z-index: 999;
+}
+.bilinav ul{
+	display: flex;
+}
+.bilinav ul li{
+	flex: 1;
+}
+.bilinav ul li a{
+	display: inline-block;
+	padding-bottom: 2px;
+	padding-top: 3px;
+	border-bottom: 5px solid transparent;
+}
+.bilinav ul li a.zhuye{
+	border-bottom: 2px solid #FA7298;
+	color: #FA7298;
+	font-weight: 900;
+}
+.bottomNav ul li a.bilishouye{
+	color: #FA7298;
+}
+.lunbotu{
+	position: relative;
+	top: 68px;
+	margin-left: 8px;
+	margin-top: 8px;
+	width: 95%;
+	overflow: hidden;
+	z-index: 3;
+}
+.lunbotu ul{
+	width: 1000%;
+	animation: banner 10s linear infinite;
+}
+@keyframes banner{
+	0%{
+		transform: translateX(-0px);
+	}
+	11%{
+		transform: translateX(-153px);
+	}
+	22%{
+		transform: translateX(-306px);
+	}
+	33%{
+		transform: translateX(-306px);
+	}
+	44%{
+		transform: translateX(-459px);
+	}
+	55%{
+		transform: translateX(-612px);
+	}
+	66%{
+		transform: translateX(-612px);
+	}
+	77%{
+		transform: translateX(-765px);
+	}
+	88%{
+		transform: translateX(-918px);
+	}
+	100%{
+		transform: translateX(-918px);
+	}
+}
+.lunbotu ul li{
+	width: 10%;
+	float: left;
+}
+.lunbotu ul li>.No2{
+	margin-left: 150px;
+}
+.lunbotu ul li img{
+	border-radius: 15px;
+	width: 100%;
+	display: block;
+	margin-left: 3px;
+}
+
+.biliav{
+	position: relative;
+	top: 72px;
+	width: 100%;
+	margin-left: 8px;
+	margin-right: 8px;
+	overflow: hidden;
+}
+.biliav a{
+    display: inline-block;
+	margin:4px;
+	width: 45%;
+	font-size: 12px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0 #E6E6E6;
+	border-radius: 8px;
+}
+.biliav a img{
+	width: 144px;
+	border-radius: 5px;
+}

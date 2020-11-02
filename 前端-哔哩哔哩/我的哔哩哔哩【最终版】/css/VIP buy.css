@@ -1,0 +1,156 @@
+.bottomNav ul li a.bilihuiyuangou{
+	color: #FA7298;
+}
+.Container{
+	width: 100%;
+	margin: 0;
+	background-color: #FFF;
+}
+.topContainer{
+	position: fixed;
+	display: flex;
+	width: 100%;
+	/* max-width: 640px; */
+	height: 68px;
+	top: 0;
+	margin: 0;
+	background-color: #FA7298;
+}
+.leftTouxiang{
+	
+	/* display: block; */
+	flex: 1;
+	text-align: center;
+	margin-top: 35px;
+}
+.leftTouxiang img{
+	width: 32px;
+	height: 32px;
+	margin-top: -8px;
+	margin-left: 0px;
+	border-radius: 50%;
+}
+.leftTouxiang i{
+	color: #fff;
+	position: absolute;
+	margin-bottom: 30px;
+	margin-left: -30px;
+}
+.SmallPic{
+	flex: 1;
+	color: #FFF;
+	margin-top: 36px;
+	display: flex;
+	margin-left: 40px;
+}
+.SmallPic .icon-icon-test{
+	font-size: 16px;
+	color: #FFF;
+	flex: 1;
+}
+.SmallPic .icon-yonghu{
+	font-size: 16px;
+	flex: 1;
+}
+.midVipBuy{
+	color: #FFF;
+	flex: 1;
+	font-size: 14px;
+	position: relative;
+	margin-top: 35px;
+	margin-left: 61px;
+}
+.topSearch{
+	width: 100%;
+	padding: 0 8px;
+	margin-top: 79px;
+	background-color: #fff;
+}
+.topSearch i{
+	color: #FA7298;
+	font-size: 13px;
+	position: absolute;
+	margin-top: 9px;
+	margin-left: 129px;
+}
+.topSearch input{
+	background-color: #F4F4F4;
+	height: 30px;
+	border-radius: 15px;
+	width: 100%;
+	text-align: center;
+	text-indent: 7px;
+	font-size: 12px;
+}
+.topSearch input::-webkit-input-placeholder{
+	color: #999999;
+}
+.PicBtn{
+	width: 100%;
+	margin-top: 15px;
+    padding-left: 20px;
+}
+.PicBtn div{
+	display: inline-block;
+	flex: 1;
+}
+.PicBtn .upbox{
+	display: flex;
+}
+.PicBtn .downbox{
+	display: flex;
+}
+.PicBtn div img{
+	width: 55px;
+	height: 73px;
+}
+.Picbtn2{
+	width: 100%;
+	margin-top: 15px;
+	display: flex;
+	padding-left: 21px;
+}
+.Picbtn2 div{
+	flex: 1;
+}
+.Picbtn2 img{
+	width: 81px;
+	height: 40px;
+}
+.bilibuy_nav{
+	width: 70%;
+	font-size: 12px;
+	margin-top: 15px;
+	text-align: center;
+	background-color: #FFF;
+	padding-left: 7px;
+}
+.bilibuy_nav ul{
+	display: flex;
+}
+.bilibuy_nav ul li{
+	flex: 1;
+}
+.bilibuy_nav ul li a{
+	display: inline-block;
+	padding-bottom: 2px;
+	padding-top: 3px;
+	border-bottom: 5px solid transparent;
+}
+.bilibuy_nav ul li a.zhuye{
+	border-bottom: 2px solid #FA7298;
+	font-weight: 900;
+}
+.product{
+	width: 100%;
+	padding-left: 18px;
+}
+.product img{
+	width: 130px;
+	height: 210px;
+}
+.product div{
+	display: inline-block;
+	box-shadow: 0 0 10px #E5E5E5;
+	margin: 4px;
+}
